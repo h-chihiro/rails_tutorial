@@ -11,7 +11,7 @@ gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.6.4'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13', groups: %w(test development), require: false
+  gem 'sqlite3', groups: %w(test development), require: false
   gem 'byebug', '9.0.6', platform: :mri
 end
 
@@ -23,7 +23,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '0.20.0', groups: %w(production), require: false
+  gem 'pg', groups: %w(production), require: false
 end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
